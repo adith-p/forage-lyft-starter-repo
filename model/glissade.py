@@ -5,7 +5,7 @@ from engine.willoughby_engine import WilloughbyEngine
 from batteries.spinder_battery import Spinder_battery
 
 
-class glissade(Car):
+class Glissade(Car):
     def __init__(self, current_mileage, last_service_mileage, last_service_date):
         self.engine = WilloughbyEngine(current_mileage, last_service_mileage)
         self.battery = Spinder_battery(last_service_date)
