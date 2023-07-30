@@ -9,7 +9,7 @@ class Spinder_battery(Battery):
 
     def battery_needs_service(self):
         self.service_threshold_date = self.last_service_date.replace(
-            year=self.last_service_date+2)
+            year=self.last_service_date+3)
         if self.service_threshold_date < datetime.today:
             return False
         return True
